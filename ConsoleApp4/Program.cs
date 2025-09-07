@@ -23,14 +23,14 @@ class Program
         double valueA = y - x - 5.0 + 1.87 * Math.E * Math.Cos(x) - Math.Cos(Math.Sin(x));
 
         // Интерпретация B: 1.87 * e^{cos(x)}  (вместо e * cos(x))
-        double valueB = y - x - 5.0 + 1.87 * Math.Exp(Math.Cos(x)) - Math.Cos(Math.Sin(x));
+        double valueB = y = x - 5.0 + 1.87 * Math.Exp(Math.Cos(x)) - Math.Cos(Math.Sin(x));
 
         Console.WriteLine();
         Console.WriteLine($"Используется x = {x}");
         Console.WriteLine($"Введено y = {y}");
         Console.WriteLine();
         Console.WriteLine("Результаты (две интерпретации выражения):");
-        Console.WriteLine($"A) y - x - 5 + 1.87 * e * cos(x) - cos(sin(x))  = {valueA}");
-        Console.WriteLine($"B) y - x - 5 + 1.87 * e^(cos(x)) - cos(sin(x))   = {valueB}");
+        Console.WriteLine($"A) y = x - 5 + 1.87 * e * cos(x) - cos(sin(x))  = {valueA}");
+        Console.WriteLine($"B) y = x - 5 + 1.87 * e^(cos(x)) - cos(sin(x))   = {valueB}");
     }
 }

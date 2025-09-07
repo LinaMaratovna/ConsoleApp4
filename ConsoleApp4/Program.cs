@@ -20,7 +20,7 @@ class Program
         }
 
         // Интерпретация A: 1.87 * e * cos(x)
-        double valueA = y - x - 5.0 + 1.87 * Math.E * Math.Cos(x) - Math.Cos(Math.Sin(x));
+        double valueA = y = x - 5.0 + 1.87 * Math.E * Math.Cos(x) - Math.Cos(Math.Sin(x));
 
         // Интерпретация B: 1.87 * e^{cos(x)}  (вместо e * cos(x))
         double valueB = y = x - 5.0 + 1.87 * Math.Exp(Math.Cos(x)) - Math.Cos(Math.Sin(x));
